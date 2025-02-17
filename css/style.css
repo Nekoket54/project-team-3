@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --font-family: "Rubik", sans-serif;
+  --second-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #1C2023;
+}
+
+.slides {
+  display: flex;
+  gap: 20px;
+}
+.slides-container {
+  border-radius: 6px;
+  width: 615px;
+  height: 346px;
+  background: linear-gradient(180deg, #30373f 22.4%, #141615 100%);
+}
+.slides-container-desc {
+  display: flex;
+  flex-direction: column;
+}
+.slides-container-desc-btn {
+  border-radius: 6px;
+  width: 102px;
+  height: 33px;
+  background: #8c96a0;
+  border: 0px;
+  margin-left: 201px;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.slides-container-desc-cont {
+  align-items: flex-start;
+  width: 256px;
+  height: 209px;
+  margin-left: 24px;
+}
+.slides-container-desc-cont-paragraph {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 142%;
+  color: #d9d9d9;
+}
+.slides-container-holder-img {
+  border-radius: 6px;
+  width: 278px;
+  height: 248px;
+  margin-left: 20px;
+}
+.slides-container-title {
+  font-family: Rubik;
+  font-weight: 600;
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 20px;
+  margin-top: -10.97px;
+}
+.slides-container-titles {
+  display: flex;
+  flex-direction: row;
+  gap: 403px;
+}
+.slides-container-titles-date {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 170%;
+  color: #8c96a0;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.slides-container-titles-name {
+  font-family: Rubik;
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #8856d9;
+  margin-top: 19.9px;
+  margin-left: 20px;
+}
+
+.swiper-button-prev {
+  border-radius: 6px;
+  width: 32px;
+  height: 31px;
+  color: white;
+  background: #8c96a0;
+  margin-left: 288px;
+}
+
+.swiper-button-next {
+  border-radius: 6px;
+  width: 32px;
+  height: 31px;
+  color: white;
+  background: #8c96a0;
+  margin-right: 288px;
+}
+
+.swiper-button-prev:hover {
+  border-radius: 6px;
+  width: 32px;
+  height: 31px;
+  color: white;
+  background: #8856d9;
+}
+
+.swiper-button-next:hover {
+  border-radius: 6px;
+  width: 32px;
+  height: 31px;
+  color: white;
+  background: #8856d9;
+}
+
+.swiper-button-prev::after {
+  font-size: 17px;
+}
+
+.swiper-button-next::after {
+  font-size: 17px;
+}
+
+.slides-container-desc-btn:hover {
+  border-radius: 6px;
+  width: 102px;
+  height: 33px;
+  background: #8856d9;
+  border: 0px;
+  margin-left: 201px;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+}
