@@ -7,6 +7,46 @@
 
 body {
   background-color: #1C2023;
+  font-family: "Rubik";
+}
+
+.video-name {
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
+}
+.video-box {
+  width: 1920px;
+  height: 944px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/video.png");
+  background-repeat: no-repeat;
+  margin-left: 0px auto;
+}
+.video-box-name {
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 78%;
+  color: #fff;
+}
+.video-box-btn {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  border-radius: 6px;
+  width: 93px;
+  height: 33px;
+  background: #30373f;
+  border: none;
 }
 
 .slides {
@@ -112,6 +152,7 @@ body {
   height: 31px;
   color: white;
   background: #8856d9;
+  transition: 0.3s;
 }
 
 .swiper-button-next:hover {
@@ -120,6 +161,7 @@ body {
   height: 31px;
   color: white;
   background: #8856d9;
+  transition: 0.3s;
 }
 
 .swiper-button-prev::after {

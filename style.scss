@@ -7,28 +7,66 @@
 
   body{
     background-color: #1C2023;
+    font-family: 'Rubik';
+  }
+
+  .video{
+
+    &-name{
+        text-align: center;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 40px;
+        color: #fff;
+    }
+    &-box{
+        width: 1920px;
+        height: 944px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../img/video.png");
+        background-repeat: no-repeat;
+        margin-left: 0px auto;
+        &-name{
+            text-align: center;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 78%;
+            color: #fff;
+        }
+        &-btn{
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            color: #fff;
+            border-radius: 6px;
+            width: 93px;
+            height: 33px;
+            background: #30373f;
+            border: none;
+        }
+    }
   }
 
 
-
+//////////////////////////// slider swiper
   .slides{
-
     display: flex;
     gap: 20px;
-
 
     &-container{
         border-radius: 6px;
         width: 615px;
         height: 346px;
         background: linear-gradient(180deg, #30373f 22.4%, #141615 100%);
-    
-        
 
         &-desc{
             display: flex;
             flex-direction: column;
-
             
             &-btn{
                 border-radius: 6px;
@@ -36,10 +74,7 @@
                 height: 33px;
                 background: #8c96a0;
                 border: 0px;
-
                 margin-left: 201px;
-
-
                 font-family:Rubik;
                 font-weight: 500;
                 font-size: 13px;
@@ -47,14 +82,11 @@
                 color: #fff;
             }
 
-
-
             &-cont{
                 align-items: flex-start;
                 width: 256px;
                 height: 209px;
                 margin-left: 24px;
-
 
                 &-paragraph{
                     font-family: Rubik;
@@ -67,12 +99,7 @@
 
         }
 
-
-
-
-
         &-holder{
-
 
             &-img{
                 border-radius: 6px;
@@ -80,11 +107,7 @@
                 height: 248px;  
                 margin-left: 20px;                          
             }
-
         }
-
-
-
 
         &-title{
             font-family: Rubik;
@@ -94,24 +117,12 @@
             color: #fff;
             margin-left: 20px;
             margin-top: -10.97px;
-                     
-
-
         }
     
-
-
-
-
-
-
          &-titles{
             display: flex;
             flex-direction: row;
             gap: 403px;
-
-
-
     
             &-date{
                 font-family: Rubik;
@@ -119,12 +130,9 @@
                 font-size: 10px;
                 line-height: 170%;
                 color: #8c96a0;
-
                 margin-top: 20px;
                margin-left: 20px;
             }
-
-
 
             &-name{
                 font-family: Rubik;
@@ -137,7 +145,6 @@
             }
          }
     }
-    
 }
 
 .swiper-button-prev{
@@ -146,7 +153,6 @@
     height: 31px;
     color: white;
     background: #8c96a0;
-
     margin-left: 288px;
 }
 
@@ -156,11 +162,8 @@
     height: 31px;
     color: white;
     background: #8c96a0;
-
     margin-right: 288px;
 }
-
-
 
 .swiper-button-prev:hover{
     border-radius: 6px;
@@ -168,13 +171,16 @@
     height: 31px;
     color: white;
     background: #8856d9;
+    transition: 0.3s;
 }
+
 .swiper-button-next:hover{
     border-radius: 6px;
     width: 32px;
     height: 31px;
     color: white;
     background: #8856d9;
+    transition: 0.3s;
 }
 
 .swiper-button-prev::after {
@@ -198,3 +204,4 @@ font-size: 17px;
     text-transform: uppercase;
     color: #fff;
 }
+////////////////////////////////////////////////////
