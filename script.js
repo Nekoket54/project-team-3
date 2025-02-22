@@ -1,3 +1,27 @@
+const burger = document.querySelector('.header-box-burger')
+const nav = document.querySelector('.header-box-nav')
+const lineBurger = document.querySelector('.header-box-burger-line2')
+
+burger.addEventListener('click',()=>{
+  const check = nav.classList.contains('hidden')
+  if (check == true) {
+    nav.classList.replace('hidden', 'visible')
+    lineBurger.classList.replace('close','open')
+  }else{
+    nav.classList.replace('visible', 'hidden')
+    lineBurger.classList.replace('open','close')   
+  }
+})
+
+
+
+
+
+
+
+
+
+////////////////////////////// video
 const box = document.querySelector('.video-box')
 const btn = document.querySelector('.video-box-btn')
 
@@ -13,9 +37,10 @@ btn.addEventListener('click',()=>{
     </iframe>
   `
 })
+////////////////////////////////
 
 
-
+//////////////////// slider swiper
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
@@ -37,3 +62,4 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+//////////////////////

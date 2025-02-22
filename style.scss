@@ -3,21 +3,223 @@
 :root {
     --font-family: "Rubik", sans-serif;
     --second-family: "Inter", sans-serif;
-  }
+}
 
-  body{
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
     background-color: #1C2023;
     font-family: 'Rubik';
-  }
+}
 
-  .video{
 
+/////////////////////// header
+.header{
+    width: 1920px;
+    height: 764.2px;
+    background-image: url('../img/header.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    &-box{
+        width: 1414px;
+        display: flex;
+        margin-left: 296px;
+        padding-top: 36.82px;
+        &-burger{
+            display: grid;
+            width: 25px;
+            height: 17.83px;
+            row-gap: 5.95px;
+            margin-right: 50px;
+            padding-top: 12px;
+            cursor: pointer;
+            &-line1{
+                width: 25px;
+                height: 1.99px;
+                margin: 0;
+                background-color: #fff;
+            }
+            &-line2{
+                width: 25px;
+                height: 1.99px;
+                margin: 0;
+                background-color: #fff;
+            }
+            &-line3{
+                width: 25px;
+                height: 1.99px;
+                margin: 0;
+                background-color: #fff;
+            }
+        }
+    
+        &-nav{
+            width: 643px;
+            display: flex;
+            column-gap: 32.5px;
+            &-link{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 193%;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.5);
+                text-decoration: none;
+                // padding-top: 8px;
+            }
+            &-link:hover{
+                color: #8856d9;
+                transition: 0.3s;
+            }
+            &-link:focus{
+                color: #8856d9;
+            }
+            &-text{
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 193%;
+                text-transform: uppercase;
+                color: #fff;
+                word-spacing: 9px;
+                cursor: pointer;
+            }
+        }
+    
+        &-container{
+            width: 266px;
+            display: flex;
+            margin-left: 430px;
+            justify-content: space-between;
+            &-name{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 16px;
+                color: #8c96a0;
+                padding-top: 13px;
+            }
+            &-box1{
+    
+                &-name{
+                    font-family: var(--font-family);
+                    font-weight: 700;
+                    font-size: 40px;
+                    color: #a9c7c7;
+                }
+                &-text{
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #8c96a0;
+                    text-align: center;
+                }
+            }
+            &-box2{
+    
+                &-name{
+                    font-family: var(--font-family);
+                    font-weight: 700;
+                    font-size: 40px;
+                    color: #a9c7c7;
+                }
+                &-text{
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #8c96a0;
+                    text-align: center;
+                }
+            }
+            &-box3{
+    
+                &-name{
+                    font-family: var(--font-family);
+                    font-weight: 700;
+                    font-size: 40px;
+                    color: #a9c7c7;
+                }
+                &-text{
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #8c96a0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+    &-basic{
+        margin-top: 112px;
+        margin-left: 282px;
+        &-name{
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 100px;
+            line-height: 100%;
+            color: #fff;
+        }
+        &-text{
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #a9c7c7;
+            margin-top: 27px;
+            margin-bottom: 50px;
+        }
+        &-btn{
+            border-radius: 6px;
+            width: 145px;
+            height: 41px;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: #8856D9;
+            border: none;
+        }
+    }
+}
+
+.hidden{
+    visibility: hidden;
+    padding-top: 0px;
+    transition: 0.1s;
+}
+.visible{
+    visibility: visible;
+    padding-top: 8px;
+    transition: 0.3s;
+}
+.open{
+    width: 12px;
+    transition: 0.3s;
+}
+.close{
+    width: 25px;
+    transition: 0.3s;
+}
+/////////////////////////////////
+
+
+///////////////////////// video
+.video{
+    width: 1920px;
+    margin: 0 auto;
     &-name{
-        text-align: center;
+        // text-align: center;
         font-family: var(--font-family);
         font-weight: 600;
         font-size: 40px;
         color: #fff;
+        margin-bottom: 32px;
+        text-align: center;
     }
     &-box{
         width: 1920px;
@@ -36,6 +238,7 @@
             font-size: 50px;
             line-height: 78%;
             color: #fff;
+            margin:76px 0px 29px 56px;
         }
         &-btn{
             font-family: var(--font-family);
@@ -48,13 +251,15 @@
             height: 33px;
             background: #30373f;
             border: none;
+            margin-left: 46px;
         }
     }
-  }
+}
+////////////////////////////
 
 
 //////////////////////////// slider swiper
-  .slides{
+.slides{
     display: flex;
     gap: 20px;
 
@@ -116,7 +321,8 @@
             text-transform: uppercase;
             color: #fff;
             margin-left: 20px;
-            margin-top: -10.97px;
+            // margin-top: -10.97px;
+            margin-bottom: 16px;
         }
     
          &-titles{
@@ -203,5 +409,6 @@ font-size: 17px;
     font-size: 13px;
     text-transform: uppercase;
     color: #fff;
+    transition: 0.3s;
 }
 ////////////////////////////////////////////////////

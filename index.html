@@ -5,49 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <img src="" alt="">
-        <nav>
-            <a href="">EDITORS</a>
-            <a href="">CONTROLLER</a>
-            <a href="">ABOUT GAME</a>
-            <a href="">EXPLORE</a>
-            <a href="">NEWS</a>
-            <a href="">FAQ</a>
-            <p>ENGLISH</p>
-        </nav>
+  
+    <header class="header">
 
-        <div>
-            <h3>realease</h3>
-            <div>
-                <h2>20</h2>
-                <h3>D</h3>
-            </div>
-            <div>
-                <h2>20</h2>
-                <h3>H</h3>
-            </div>
-            <div>
-                <h2>59</h2>
-                <h3>M</h3>
-            </div>
+      <div class="header-box">
+        <div class="header-box-burger">
+          <p class="header-box-burger-line1"></p>
+          <p class="header-box-burger-line2 close"></p>
+          <p class="header-box-burger-line3"></p>
         </div>
 
-        <div>
-            <h1>
-                God of War <br> Ragnarök
-            </h1>
+        <nav class="header-box-nav hidden">
+            <a class="header-box-nav-link" href="#">EDITORS</a>
+            <a class="header-box-nav-link" href="#">CONTROLLER</a>
+            <a class="header-box-nav-link" href="#">ABOUT GAME</a>
+            <a class="header-box-nav-link" href="#">EXPLORE</a>
+            <a class="header-box-nav-link" href="#">NEWS</a>
+            <a class="header-box-nav-link" href="#">FAQ</a>
+            <p class="header-box-nav-text">ENGLISH <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.159765 1.67328L5.61445 7.15492C5.71671 7.25772 5.85547 7.31546 6.00013 7.31546C6.14482 7.31546 6.28355 7.25768 6.38584 7.15488L11.8402 1.67325C12.0533 1.45917 12.0533 1.11211 11.8402 0.898032C11.6273 0.683992 11.2819 0.683955 11.0689 0.898032L6.00013 5.99205L0.931146 0.898032C0.824637 0.790994 0.685037 0.737493 0.545437 0.737493C0.405837 0.737493 0.266238 0.790994 0.159729 0.898068C-0.0532533 1.11214 -0.0532534 1.45921 0.159765 1.67328Z" fill="white" />
+            </svg></p>
+        </nav>
 
-            <p>
-                Taking place three years following the events of the previous <br> game, Fimbulwinter, a great winter that spans three summers, <br> is drawing to a close which will begin the prophesied Ragnarök.
-            </p>
+        <div class="header-box-container">
+            <h3 class="header-box-container-name">realease:</h3>
+            <div class="header-box-container-box1">
+                <h2 class="header-box-container-box1-name">20</h2>
+                <p class="header-box-container-box1-text">D</p>
+            </div>
+            <div class="header-box-container-box2">
+                <h2 class="header-box-container-box2-name">20</h2>
+                <p class="header-box-container-box2-text">H</p>
+            </div>
+            <div class="header-box-container-box3">
+                <h2 class="header-box-container-box3-name">59</h2>
+                <p class="header-box-container-box3-text">M</p>
+            </div>
+        </div>
+      </div>
 
-            <button>
-                BUY NOW
-            </button>
+        <div class="header-basic">
+            <h1 class="header-basic-name">God of War <br> Ragnarök</h1>
+            <p class="header-basic-text">Taking place three years following the events of the previous <br> game, Fimbulwinter, a great winter that spans three summers, <br> is drawing to a close which will begin the prophesied Ragnarök.</p>
+            <button class="header-basic-btn">BUY NOW</button>
         </div>
     </header>
 
@@ -176,86 +180,119 @@
             <h2>News</h2>
             <div class="swiper">
 
-                <div class="swiper-wrapper slides">
-        
-                  <div class="swiper-slide slides-container">
-                    <div class="slides-container-titles">
-                      <p class="slides-container-titles-name">God of War Ragnarok </p>
-                      <p class="slides-container-titles-date">19/10/2022</p>
-                    </div>
-                  <h2 class="slides-container-title">
-                    tells a mature story
-                  </h2>
-                  <div style="display: flex; flex-direction: row;">
-                    <div class="slides-container-holder">
-                      <img src="./img/slider-pht-1.png" alt="" class="slides-container-holder-img">
-                    </div>
-                    <div class="slides-container-desc">
-                      <div class="slides-container-desc-cont">
-                        <p class="slides-container-desc-cont-paragraph">Familiar characters will return to the game, but also completely new ones. We are talking here about Thor, presented as a brutal and mentally unstable performer of "dirty work" in the services of Odin , as well as the ruler of the gods himself, who left his mark on the events of the previous installment, although he did not appear in it personally.</p>
-                      </div>
-                      
-                      <button class="slides-container-desc-btn">
-          READ
-                      </button>
-                    </div>
+              <div class="swiper-wrapper slides">
+      
+                <div class="swiper-slide slides-container">
+                  <div class="slides-container-titles">
+                    <p class="slides-container-titles-name">God of War Ragnarok </p>
+                    <p class="slides-container-titles-date">19/10/2022</p>
                   </div>
+                <h2 class="slides-container-title">
+                  tells a mature story
+                </h2>
+                <div style="display: flex; flex-direction: row;">
+                  <div class="slides-container-holder">
+                    <img src="./img/slider-pht-1.png" alt="" class="slides-container-holder-img">
                   </div>
-        
-        
-        
-        
-        
-                  <div class="swiper-slide slides-container">
-                    <div class="slides-container-titles">
-                      <p class="slides-container-titles-name">God of War Ragnarok </p>
-                      <p class="slides-container-titles-date">19/10/2022</p>
+                  <div class="slides-container-desc">
+                    <div class="slides-container-desc-cont">
+                      <p class="slides-container-desc-cont-paragraph">Familiar characters will return to the game, but also completely new ones. We are talking here about Thor, presented as a brutal and mentally unstable performer of "dirty work" in the services of Odin , as well as the ruler of the gods himself, who left his mark on the events of the previous installment, although he did not appear in it personally.</p>
                     </div>
-                  <h2 class="slides-container-title">
-                    will receive a large update on release
-                  </h2>
-                  <div style="display: flex; flex-direction: row;">
-                    <div class="slides-container-holder">
-                      <img src="./img/slider-pht-2.png" alt="" class="slides-container-holder-img">
-                    </div>
-                    <div class="slides-container-desc">
-                      <div class="slides-container-desc-cont">
-                        <p class="slides-container-desc-cont-paragraph">God of War: Ragnarok is fast approaching. 
-                          No wonder that we have been regularly receiving new information and materials related to the title in recent times. 
-                          Last week, a trailer presenting the possibilities of the game on PlayStation 5 
-                          hit the network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the upcoming sequel to the adventures of Kratos and Atreus will receive a major update on release.</p>
-                      </div>
-                      <button class="slides-container-desc-btn">
-          READ
-                      </button>
-                    </div>
+                    
+                    <button class="slides-container-desc-btn">
+        READ
+                    </button>
                   </div>
+                </div>
+                </div>
+      
+      
+      
+      
+      
+                <div class="swiper-slide slides-container">
+                  <div class="slides-container-titles">
+                    <p class="slides-container-titles-name">God of War Ragnarok </p>
+                    <p class="slides-container-titles-date">19/10/2022</p>
                   </div>
-        
-        
-        
-                  <div class="swiper-slide slides-container">
-                    <div class="slides-container-titles">
-                      <p class="slides-container-titles-name">God of War Ragnarok </p>
-                      <p class="slides-container-titles-date">19/10/2022</p>
-                    </div>
-                  <h2 class="slides-container-title">
-                    is officially one of the largest PS4 games by size
-                  </h2>
-                  <div style="display: flex; flex-direction: row;">
-                    <div class="slides-container-holder">
-                      <img src="./img/slider-pht-3.png" alt="" class="slides-container-holder-img">
-                    </div>
-                    <div class="slides-container-desc">
-                      <div class="slides-container-desc-cont">
-                        <p class="slides-container-desc-cont-paragraph">Digital distribution enthusiasts need to get ready for tons of downloads. The second adventure of Kratos and Atreus in the High North from the premiere will occupy nearly 120GB - when deciding to buy a title from PlayStation Store, it is worth planning your download wisely to start the game on the day of the premiere.</p>
-                      </div>
-                      <button class="slides-container-desc-btn">
-          READ
-                      </button>
-                    </div>
+                <h2 class="slides-container-title">
+                  will receive a large update on release
+                </h2>
+                <div style="display: flex; flex-direction: row;">
+                  <div class="slides-container-holder">
+                    <img src="./img/slider-pht-2.png" alt="" class="slides-container-holder-img">
                   </div>
+                  <div class="slides-container-desc">
+                    <div class="slides-container-desc-cont">
+                      <p class="slides-container-desc-cont-paragraph">God of War: Ragnarok is fast approaching. <br>
+                        No wonder that we have been regularly receiving new information and materials related to the title in recent times. <br>
+                        Last week, a trailer presenting the possibilities of the game on PlayStation 5 <br>
+                        hit the network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the upcoming sequel to the adventures of Kratos and Atreus will receive a major update on release.</p>
+                    </div>
+                    <button class="slides-container-desc-btn">
+        READ
+                    </button>
                   </div>
+                </div>
+                </div>
+      
+      
+      
+                <div class="swiper-slide slides-container">
+                  <div class="slides-container-titles">
+                    <p class="slides-container-titles-name">God of War Ragnarok </p>
+                    <p class="slides-container-titles-date">19/10/2022</p>
+                  </div>
+                <h2 class="slides-container-title">
+                  is officially one of the largest PS4 games by size
+                </h2>
+                <div style="display: flex; flex-direction: row;">
+                  <div class="slides-container-holder">
+                    <img src="./img/slider-pht-3.png" alt="" class="slides-container-holder-img">
+                  </div>
+                  <div class="slides-container-desc">
+                    <div class="slides-container-desc-cont">
+                      <p class="slides-container-desc-cont-paragraph">Digital distribution enthusiasts need to get ready for tons of downloads. The second adventure of Kratos and Atreus in the High North from the premiere will occupy nearly 120GB - when deciding to buy a title from PlayStation Store, it is worth planning your download wisely to start the game on the day of the premiere.</p>
+                    </div>
+                    <button class="slides-container-desc-btn">
+        READ
+                    </button>
+                  </div>
+                </div>
+                </div>
+                <div class="swiper-slide slides-container">
+                  <div class="slides-container-titles">
+                    <p class="slides-container-titles-name">God of War Ragnarok </p>
+                    <p class="slides-container-titles-date">19/10/2022</p>
+                  </div>
+                <h2 class="slides-container-title">
+                  is the final chapter in an epic story. See the new video
+                </h2>
+                <div style="display: flex;">
+                  <div class="slides-container-holder">
+                    <img src="./img/slider-pht-4.png" alt="" class="slides-container-holder-img">
+                  </div>
+                  <div class="slides-container-desc">
+                    <div class="slides-container-desc-cont">
+                      <p class="slides-container-desc-cont-paragraph">The highly anticipated game God of War: Ragnarok will debut in just over twenty days. On this occasion, representatives of the Santa Monica studio together with Sony decided to release a new trailer dedicated to the epic history of Kratos and Atreus - in this way we have received confirmation that Ragnarok is the final chapter of the adventures of the god of war.</p>
+                    </div>
+                    
+                    <button class="slides-container-desc-btn">
+        READ
+                    </button>
+                  </div>
+                </div>
+                </div>
+              </div>
+      
+      
+            
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            
+      
+            </div>
+      
         </section>
 
         <section>

@@ -5,17 +5,207 @@
   --second-family: "Inter", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   background-color: #1C2023;
   font-family: "Rubik";
 }
 
-.video-name {
+.header {
+  width: 1920px;
+  height: 764.2px;
+  background-image: url("../img/header.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.header-box {
+  width: 1414px;
+  display: flex;
+  margin-left: 296px;
+  padding-top: 36.82px;
+}
+.header-box-burger {
+  display: grid;
+  width: 25px;
+  height: 17.83px;
+  row-gap: 5.95px;
+  margin-right: 50px;
+  padding-top: 12px;
+  cursor: pointer;
+}
+.header-box-burger-line1 {
+  width: 25px;
+  height: 1.99px;
+  margin: 0;
+  background-color: #fff;
+}
+.header-box-burger-line2 {
+  width: 25px;
+  height: 1.99px;
+  margin: 0;
+  background-color: #fff;
+}
+.header-box-burger-line3 {
+  width: 25px;
+  height: 1.99px;
+  margin: 0;
+  background-color: #fff;
+}
+.header-box-nav {
+  width: 643px;
+  display: flex;
+  -moz-column-gap: 32.5px;
+       column-gap: 32.5px;
+}
+.header-box-nav-link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 193%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+.header-box-nav-link:hover {
+  color: #8856d9;
+  transition: 0.3s;
+}
+.header-box-nav-link:focus {
+  color: #8856d9;
+}
+.header-box-nav-text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 193%;
+  text-transform: uppercase;
+  color: #fff;
+  word-spacing: 9px;
+  cursor: pointer;
+}
+.header-box-container {
+  width: 266px;
+  display: flex;
+  margin-left: 430px;
+  justify-content: space-between;
+}
+.header-box-container-name {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #8c96a0;
+  padding-top: 13px;
+}
+.header-box-container-box1-name {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  color: #a9c7c7;
+}
+.header-box-container-box1-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #8c96a0;
   text-align: center;
+}
+.header-box-container-box2-name {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  color: #a9c7c7;
+}
+.header-box-container-box2-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #8c96a0;
+  text-align: center;
+}
+.header-box-container-box3-name {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  color: #a9c7c7;
+}
+.header-box-container-box3-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #8c96a0;
+  text-align: center;
+}
+.header-basic {
+  margin-top: 112px;
+  margin-left: 282px;
+}
+.header-basic-name {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 100%;
+  color: #fff;
+}
+.header-basic-text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #a9c7c7;
+  margin-top: 27px;
+  margin-bottom: 50px;
+}
+.header-basic-btn {
+  border-radius: 6px;
+  width: 145px;
+  height: 41px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #8856D9;
+  border: none;
+}
+
+.hidden {
+  visibility: hidden;
+  padding-top: 0px;
+  transition: 0.1s;
+}
+
+.visible {
+  visibility: visible;
+  padding-top: 8px;
+  transition: 0.3s;
+}
+
+.open {
+  width: 12px;
+  transition: 0.3s;
+}
+
+.close {
+  width: 25px;
+  transition: 0.3s;
+}
+
+.video {
+  width: 1920px;
+  margin: 0 auto;
+}
+.video-name {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 40px;
   color: #fff;
+  margin-bottom: 32px;
+  text-align: center;
 }
 .video-box {
   width: 1920px;
@@ -35,6 +225,7 @@ body {
   font-size: 50px;
   line-height: 78%;
   color: #fff;
+  margin: 76px 0px 29px 56px;
 }
 .video-box-btn {
   font-family: var(--font-family);
@@ -47,6 +238,7 @@ body {
   height: 33px;
   background: #30373f;
   border: none;
+  margin-left: 46px;
 }
 
 .slides {
@@ -102,7 +294,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   margin-left: 20px;
-  margin-top: -10.97px;
+  margin-bottom: 16px;
 }
 .slides-container-titles {
   display: flex;
@@ -184,4 +376,5 @@ body {
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
+  transition: 0.3s;
 }
