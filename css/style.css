@@ -485,6 +485,9 @@ body {
   text-transform: uppercase;
   color: #d9d9d9;
 }
+.container-card:focus {
+  outline: none;
+}
 .container-box1 {
   display: flex;
 }
@@ -523,6 +526,9 @@ body {
   text-transform: uppercase;
   color: #d9d9d9;
 }
+.container-box1-case1-expire:focus {
+  outline: none;
+}
 .container-box1-case2-infoCcv {
   font-family: var(--font-family);
   font-weight: 400;
@@ -553,6 +559,9 @@ body {
   font-size: 12px;
   text-transform: uppercase;
   color: #d9d9d9;
+}
+.container-box1-case2-ccv:focus {
+  outline: none;
 }
 .container-infoInstant {
   font-family: var(--font-family);
@@ -586,6 +595,9 @@ body {
   text-transform: uppercase;
   color: #d9d9d9;
 }
+.container-instant:focus {
+  outline: none;
+}
 .container-box2 {
   display: flex;
   margin-bottom: 6.97px;
@@ -601,6 +613,7 @@ body {
      -moz-appearance: none;
           appearance: none;
   background: #30373f;
+  transition: 0.3s;
 }
 .container-box2-checkbox:checked {
   background: #8856D9;
@@ -685,6 +698,96 @@ body {
   visibility: visible;
   top: 50%;
   transition: 0.5s;
+}
+
+.dualSense-name {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  margin-top: 53.73px;
+}
+.dualSense-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 92.67px;
+}
+.dualSense-container-box1 {
+  margin-right: 150px;
+  margin-top: 65.67px;
+}
+.dualSense-container-box1-text1 {
+  width: 425px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #a9c7c7;
+}
+.dualSense-container-box1-text2 {
+  width: 410px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #a9c7c7;
+  margin-top: 21.89px;
+  margin-bottom: 26.87px;
+}
+.dualSense-container-box1-case {
+  display: flex;
+}
+.dualSense-container-box1-case-text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  padding-top: 8px;
+}
+.dualSense-container-box1-case-btn {
+  width: 274px;
+  height: 46px;
+  border-radius: 6px;
+  background: #ff4136;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  margin-left: 33px;
+  cursor: pointer;
+}
+.dualSense-container-box1-case-btn:hover {
+  background: #b5322b;
+  transition: 0.3s;
+}
+.dualSense-container-box2 {
+  margin-top: 20.23px;
+  position: relative;
+}
+.dualSense-container-box2-photo {
+  width: 340px;
+}
+.dualSense-container-box2-svg {
+  border-radius: 100%;
+  fill: rgba(79, 96, 152, 0.8);
+  filter: blur(150px);
+  position: absolute;
+  top: -60px;
+  left: -85px;
+}
+
+.span1 {
+  font-weight: 700;
+  color: #8856d9;
+}
+
+.span2 {
+  font-weight: 700;
+  color: #ff4136;
 }
 
 .video {
