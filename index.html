@@ -19,7 +19,7 @@
           <p class="header-box-burger-line3"></p>
         </div>
 
-        <nav class="header-box-nav hidden">
+        <nav class="header-box-nav headerHidden">
             <a class="header-box-nav-link" href="#">EDITORS</a>
             <a class="header-box-nav-link" href="#">CONTROLLER</a>
             <a class="header-box-nav-link" href="#">ABOUT GAME</a>
@@ -57,50 +57,74 @@
 
 
     <main>
-        <section>
-            <h2></h2>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <h3>Standart Edition</h3>
-                    <p>PS5</p>
-                    <p>Offline play enabled</p>
-                    <p>Remote Play supported</p>
-                    <p>Trigger effect required</p>
-                    <div>
-                        <p>19.99$</p>
-                        <button>BUY NOW</button>
+        <section class="edition">
+            <h2 class="edition-name">Editions</h2>
+            <div class="edition-container">
+                <div class="edition-container-box1">
+                    <img src="./img/StandardEdition.png" alt="" class="edition-container-box1-photo">
+                    <h3 class="edition-container-box1-name">Standart Edition</h3>
+                    <p class="edition-container-box1-text1">PS5</p>
+                    <p class="edition-container-box1-text2">Offline play enabled <br> Remote Play supported <br> Trigger effect required</p>
+                    <div class="edition-container-box1-box">
+                        <p class="edition-container-box1-box-text">19.99$</p>
+                        <button class="edition-container-box1-box-btn">BUY NOW</button>
                     </div>
 
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <h3>Standart Edition</h3>
-                    <p>PS4</p>
-                    <p>Offline play enabled</p>
-                    <p>Remote Play supported</p>
-                    <p>Trigger effect required</p>
-                    <div>
-                        <p>18.99$</p>
-                        <button>BUY NOW</button>    
+                <div class="edition-container-box2">
+                    <img src="./img/StandardEdition.png" alt="" class="edition-container-box2-photo">
+                    <h3 class="edition-container-box2-name">Standart Edition</h3>
+                    <p class="edition-container-box2-text1">PS4</p>
+                    <p class="edition-container-box2-text2">Offline play enabled <br> Remote Play supported <br> Trigger effect required</p>
+                    <div class="edition-container-box2-box">
+                        <p class="edition-container-box2-box-text">18.99$</p>
+                        <button class="edition-container-box2-box-btn">BUY NOW</button>    
                     </div>
 
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <h3>Digital Deluxe Edition</h3>
-                    <p>PS5</p>
-                    <p>All features of Standard Edition</p>
-                    <p>Darkdale Armour</p>
-                    <p>Official digital soundtrack</p>
-                    <div>
-                        <p>29.99$</p>
-                        <button>BUY NOW</button>
+                <div class="edition-container-box3">
+                    <img src="./img/DeluxeEdition.png" alt="" class="edition-container-box3-photo">
+                    <h3 class="edition-container-box3-name">Digital Deluxe Edition</h3>
+                    <p class="edition-container-box3-text1">PS5</p>
+                    <p class="edition-container-box3-text2">All features of Standard Edition <br> Darkdale Armour <br> Official digital soundtrack</p>
+                    <div class="edition-container-box3-box">
+                        <p class="edition-container-box3-box-text">29.99$</p>
+                        <button class="edition-container-box3-box-btn">BUY NOW</button>
                     </div>
                 </div>
             </div>
 
         </section>
+        
+          <div class="container FormOfPaymentHidden">
+            <p class="container-close">X</p>
+            <h2 class="container-name1">GOD OF WAR RAGNAROK</h2>
+            <h3 class="container-name2">STANDARD EDTION</h3>
+            <label for="container-card" class="container-infoCard">CREDIT CARD:</label>
+            <input type="text" class="container-card" placeholder="0000 0000 0000 0000">
+            <div class="container-box1">
+              <div class="container-box1-case1">
+                <label for="container-box1-case1-expire" class="container-box1-case1-infoExpire">EXPIRE:</label>
+                <input type="text" class="container-box1-case1-expire" placeholder="MM/YY">
+              </div>
+              <div class="container-box1-case2">
+                <label for="container-box1-case2-ccv" class="container-box1-case2-infoCcv">CCV:</label>
+                <input type="text" class="container-box1-case2-ccv" placeholder="***">
+              </div>
+            </div>
+            <label for="container-instant" class="container-infoInstant">INSTANT:</label>
+            <input type="text" class="container-instant" placeholder="JOHN DOE">
+            <div class="container-box2">
+              <input type="checkbox" class="container-box2-checkbox">
+              <p class="container-box2-text">I AGREE WITH THE <span class="span">RULES</span> OF THE SITE</p>
+            </div>
+            <p class="container-text">Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms plus any specific additional conditions applying to this product. If you do not wish to accept these terms, do not download this product. See Terms of Service for more important information.</p>
+            <div class="container-box3">
+              <h2 class="container-box3-name">YOUR TOTAL SUMMA:</h2>
+              <p class="container-box3-text">19.99$</p>
+            </div>
+            <button class="container-btn">BUY NOW</button>
+          </div>
 
         <section>
             <h2>DualSense</h2>

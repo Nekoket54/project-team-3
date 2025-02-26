@@ -1,16 +1,42 @@
+////////////////////////////// header
 const burger = document.querySelector('.header-box-burger')
 const nav = document.querySelector('.header-box-nav')
 const lineBurger = document.querySelector('.header-box-burger-line2')
 
 burger.addEventListener('click',()=>{
-  const check = nav.classList.contains('hidden')
+  const check = nav.classList.contains('headerHidden')
   if (check == true) {
-    nav.classList.replace('hidden', 'visible')
+    nav.classList.replace('headerHidden', 'headerVisible')
     lineBurger.classList.replace('close','open')
   }else{
-    nav.classList.replace('visible', 'hidden')
+    nav.classList.replace('headerVisible', 'headerHidden')
     lineBurger.classList.replace('open','close')   
   }
+})
+//////////////////////////////
+
+////////////////////////////// Form of payment 
+const btn1 = document.querySelector('.edition-container-box1-box-btn')
+const btn2 = document.querySelector('.edition-container-box2-box-btn')
+const btn3 = document.querySelector('.edition-container-box3-box-btn')
+const FormOfPayment = document.querySelector('.container')
+const close = document.querySelector('.container-close')
+const sum = document.querySelector('.container-box3-text')
+
+btn1.addEventListener('click',()=>{
+  FormOfPayment.classList.replace('FormOfPaymentHidden', 'FormOfPaymentVisible')
+  sum.textContent = '19.99$'
+})
+btn2.addEventListener('click',()=>{
+  FormOfPayment.classList.replace('FormOfPaymentHidden', 'FormOfPaymentVisible')
+  sum.textContent = '18.99$'
+})
+btn3.addEventListener('click',()=>{
+  FormOfPayment.classList.replace('FormOfPaymentHidden', 'FormOfPaymentVisible')
+  sum.textContent = '29.99$'
+})
+close.addEventListener('click',()=>{
+  FormOfPayment.classList.replace('FormOfPaymentVisible', 'FormOfPaymentHidden')
 })
 
 
@@ -20,6 +46,8 @@ burger.addEventListener('click',()=>{
 
 
 
+
+//////////////////////////////
 
 ////////////////////////////// video
 const box = document.querySelector('.video-box')
