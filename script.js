@@ -4,8 +4,8 @@ const nav = document.querySelector('.header-box-nav')
 const lineBurger = document.querySelector('.header-box-burger-line2')
 
 burger.addEventListener('click',()=>{
-  const check = nav.classList.contains('headerHidden')
-  if (check == true) {
+  const check1 = nav.classList.contains('headerHidden')
+  if (check1 == true) {
     nav.classList.replace('headerHidden', 'headerVisible')
     lineBurger.classList.replace('close','open')
   }else{
@@ -38,15 +38,6 @@ btn3.addEventListener('click',()=>{
 close.addEventListener('click',()=>{
   FormOfPayment.classList.replace('FormOfPaymentVisible', 'FormOfPaymentHidden')
 })
-
-
-
-
-
-
-
-
-
 //////////////////////////////
 
 ////////////////////////////// video
@@ -90,4 +81,46 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+//////////////////////
+
+////////////////////// FAQ
+const btn4 = document.querySelector('.faq-container-box1-case-btn')
+const btn5 = document.querySelector('.faq-container-box2-case-btn')
+const text1 = document.querySelector('.faq-container-box1-text')
+const text2 = document.querySelector('.faq-container-box2-text')
+const spanFaqBtn1 = document.querySelector('.spanFaqBtn1')
+const spanFaqBtn2 = document.querySelector('.spanFaqBtn2')
+const case1 = document.querySelector('.faq-container-box1-case')
+const case2 = document.querySelector('.faq-container-box2-case')
+
+btn4.addEventListener('click',()=>{
+  const check2 = text1.classList.contains('faqHidden')
+  if (check2 == true){
+    text1.classList.replace('faqHidden','faqVisible')
+    spanFaqBtn1.style.transform = 'rotate(45deg)'
+    case1.style.marginBottom = '13px'
+  }else{
+    text1.classList.replace('faqVisible','faqHidden')
+    spanFaqBtn1.style.transform = 'rotate(0deg)'
+    case1.style.marginBottom = '0px'
+  }
+})
+
+btn5.addEventListener('click',()=>{
+  const check2 = text2.classList.contains('faqHidden')
+  if (check2 == true){
+    text2.classList.replace('faqHidden','faqVisible')
+    spanFaqBtn2.style.transform = 'rotate(45deg)'
+    case2.style.marginBottom = '13px'
+  }else{
+    text2.classList.replace('faqVisible','faqHidden')
+    spanFaqBtn2.style.transform = 'rotate(0deg)'
+    case2.style.marginBottom = '0px'
+  }
+})
+
+
+
+
+
 //////////////////////

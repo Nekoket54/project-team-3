@@ -20,15 +20,32 @@ body{
 .header{
     width: 1920px;
     height: 764.2px;
-    background-image: url('../img/header.png');
+    background: url('../img/header.png');
     background-position: right;
     background-repeat: no-repeat;
     margin: 0 auto;
+    &-photo{
+        width: 1363px;
+        height: 751px;
+        position: absolute;
+        left: 30%;
+    }
+    &-case{
+        width: 1370px;
+        height: 764px;
+        background: url('../img/gradientBottom.png'),url('../img/gradientRight.png'),url('../img/gradientLeft.png'),url('../img/animationHeader.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 29%;
+        z-index: 0;
+    }
     &-box{
         width: 1414px;
         display: flex;
         margin-left: 296px;
         padding-top: 36.82px;
+        position: relative;
+        z-index: 1;
         &-burger{
             display: grid;
             width: 25px;
@@ -155,6 +172,8 @@ body{
     &-basic{
         margin-top: 112px;
         margin-left: 282px;
+        position: relative;
+        z-index: 1;
         &-name{
             font-family: var(--font-family);
             font-weight: 600;
@@ -439,6 +458,7 @@ body{
     padding-right: 32px;
     padding-bottom: 18.68px;
     border-radius: 12px;
+    z-index: 2;
     &-close{
         font-family: var(--font-family);
         font-weight: 400;
@@ -669,7 +689,7 @@ body{
         transition: 0.3s;
     }
 }
-.span{
+.spanFormOfPayment{
     font-weight: 700;
     text-decoration: underline;
     text-decoration-skip-ink: none;
@@ -756,15 +776,22 @@ body{
             }
         }
         &-box2{
+            width: 340px;
             margin-top: 20.23px;
             position: relative;
             &-photo{
                 width: 340px;
+                position: absolute;
+                animation-name: top;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                z-index: 1;
             }
             &-svg{
                 border-radius: 100%;
                 fill: rgba(79, 96, 152, 0.8);
-                filter: blur(150px);
+                filter: blur(20px);
                 position: absolute;
                 top: -60px;
                 left: -85px;
@@ -772,13 +799,24 @@ body{
         }
     }
 }
-.span1{
+.spanDualSense1{
     font-weight: 700;
     color: #8856d9;
 }
-.span2{
+.spanDualSense2{
     font-weight: 700;
     color: #ff4136;
+}
+@keyframes top{
+    0%{
+        top: 15px;
+    }
+    50%{
+        top: -15px;
+    }
+    100%{
+        top: 15px;
+    }
 }
 /////////////////////////
 
@@ -991,4 +1029,127 @@ font-size: 17px;
     color: #fff;
     transition: 0.3s;
 }
-////////////////////////////////////////////////////
+/////////////////////////////////
+
+///////////////////////////////// FAQ
+.faq{
+    width: 903px;
+    margin: 0 auto;
+    &-name{
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 40px;
+        text-align: center;
+        color: #fff;
+        margin-top: 107.64px;
+        margin-bottom: 32px;
+    }
+    &-container{
+
+        &-box1{
+
+            &-case{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 2px solid #8856d9;
+                padding-bottom: 6px;
+                transition: 0.5s;
+                &-text{
+                    font-family: var(--font-family);
+                    font-weight: 600;
+                    font-size: 17px;
+                    color: #fff;
+                    padding-top: 7px;
+                }
+                &-btn{
+                    border-radius: 6px;
+                    width: 30px;
+                    height: 30px;
+                    background-color: #8c96a0;
+                    font-family: var(--font-family);
+                    font-weight: 600;
+                    font-size: 20px;
+                    text-align: center;
+                    color: #fff;
+                    border: none;
+                    padding-bottom: 2px;
+                    cursor: pointer;
+                }
+            }
+            &-text{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                color: #fff;
+                line-height: 18px;
+                margin-bottom: 31px;
+            }
+        }
+        &-box2{
+
+            &-case{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 2px solid #8856d9;
+                padding-bottom: 6px;
+                transition: 0.5s;
+                &-text{
+                    font-family: var(--font-family);
+                    font-weight: 600;
+                    font-size: 17px;
+                    color: #fff;
+                    padding-top: 7px;
+                }
+                &-btn{
+                    border-radius: 6px;
+                    width: 30px;
+                    height: 30px;
+                    background-color: #8c96a0;
+                    font-family: var(--font-family);
+                    font-weight: 600;
+                    font-size: 20px;
+                    text-align: center;
+                    color: #fff;
+                    border: none;
+                    padding-bottom: 2px;
+                    cursor: pointer;
+                }
+            }
+            &-text{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                color: #fff;
+                line-height: 18px;
+            }
+        }
+    }
+}
+.spanFaq{
+    color: #ff4136;
+}
+.spanFaqBtn1{
+    display: inline-block;
+    transition: 0.3s;
+}
+.spanFaqBtn2{
+    display: inline-block;
+    transition: 0.3s;
+}
+.faqHidden{
+    visibility: hidden;
+    margin: 0;
+    transition: 0.2s;
+    color: #ffffff00;
+}
+.faqHidden .spanFaq{
+    visibility: hidden;
+    margin: 0;
+    transition: 0.2s;
+    color: #ff403600;
+}
+.faqVisible{
+    visibility: visible;
+    transition: 0.5s;
+}
+/////////////////////////////////
