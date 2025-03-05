@@ -22,18 +22,22 @@ const btn3 = document.querySelector('.edition-container-box3-box-btn')
 const FormOfPayment = document.querySelector('.container')
 const close = document.querySelector('.container-close')
 const sum = document.querySelector('.container-box3-text')
+const edition = document.querySelector('.container-name2')
 
 btn1.addEventListener('click',()=>{
   FormOfPayment.classList.replace('FormOfPaymentHidden', 'FormOfPaymentVisible')
   sum.textContent = '19.99$'
+  edition.textContent = 'STANDARD EDTION'
 })
 btn2.addEventListener('click',()=>{
   FormOfPayment.classList.replace('FormOfPaymentHidden', 'FormOfPaymentVisible')
   sum.textContent = '18.99$'
+  edition.textContent = 'STANDARD EDTION'
 })
 btn3.addEventListener('click',()=>{
   FormOfPayment.classList.replace('FormOfPaymentHidden', 'FormOfPaymentVisible')
   sum.textContent = '29.99$'
+  edition.textContent = 'DIGITAL DELUXE EDITION'
 })
 close.addEventListener('click',()=>{
   FormOfPayment.classList.replace('FormOfPaymentVisible', 'FormOfPaymentHidden')
@@ -46,7 +50,7 @@ const btn = document.querySelector('.video-box-btn')
 
 btn.addEventListener('click',()=>{
   box.innerHTML = `
-    <iframe width="1920px" height="944px" 
+    <iframe width="100%" height="944px" 
       src="https://www.youtube.com/embed/hfJ4Km46A-0?autoplay=1" 
       title="YouTube video player" 
       frameborder="0" 

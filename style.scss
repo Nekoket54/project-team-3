@@ -12,7 +12,7 @@
 
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 body{
@@ -24,25 +24,31 @@ body{
 /////////////////////// header
 .header{
     width: 1920px;
-    height: 764.2px;
-    background: url('../img/header.png');
-    background-position: right;
-    background-repeat: no-repeat;
+    height: 763px;
     margin: 0 auto;
-    &-photo{
-        width: 1363px;
-        height: 751px;
-        position: absolute;
-        left: 30%;
-    }
     &-case{
-        width: 1370px;
-        height: 764px;
-        background: url('../img/gradientBottom.png'),url('../img/gradientRight.png'),url('../img/gradientLeft.png'),url('../img/animationHeader.png');
-        background-repeat: no-repeat;
+        width: 1363px;
+        height: 763px;
         position: absolute;
-        left: 29%;
-        z-index: 0;
+        &-photo1{
+            width: 1361px;
+            position: absolute;
+            left: 40.9%;
+        }
+        &-photo2{
+            width: 1363px;
+            height: 763px;
+            position: absolute;
+            left: 40.9%;
+        }
+        &-box{
+            width: 1370px;
+            height: 763px;
+            background: url('../img/gradientBottom.png'),url('../img/gradientRight.png'),url('../img/gradientLeft.png'),url('../img/animationHeader.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 40.9%;
+        }
     }
     &-box{
         width: 1414px;
@@ -83,6 +89,7 @@ body{
             width: 643px;
             display: flex;
             column-gap: 32.5px;
+            flex-wrap: wrap;
             &-link{
                 font-family: var(--font-family);
                 font-weight: 400;
@@ -238,7 +245,6 @@ body{
 
 ///////////////////////////////// edition
 .edition{
-    width: 1550px;
     margin-top: 53px;
     margin: 0 auto;
     &-name{
@@ -247,6 +253,7 @@ body{
         font-size: 40px;
         color: var(--header-name);
         text-align: center;
+        margin-top: 53.73px;
     }
     &-container{
         display: flex;
@@ -716,7 +723,6 @@ body{
 
 ///////////////////////// DualSense
 .dualSense{
-    width: 1411px;
     margin: 0 auto;
     &-name{
         font-family: var(--font-family);
@@ -830,10 +836,8 @@ body{
 
 ///////////////////////// video
 .video{
-    width: 1920px;
     margin: 0 auto;
     &-name{
-        // text-align: center;
         font-family: var(--font-family);
         font-weight: 600;
         font-size: 40px;
@@ -842,7 +846,7 @@ body{
         text-align: center;
     }
     &-box{
-        width: 1920px;
+        width: 100%;
         height: 944px;
         display: flex;
         flex-direction: column;
@@ -851,6 +855,7 @@ body{
         background-image: url("../img/video.png");
         background-repeat: no-repeat;
         margin-left: 0px auto;
+        background-size: cover;
         &-name{
             text-align: center;
             font-family: var(--font-family);
@@ -1186,12 +1191,266 @@ font-size: 17px;
 
 //////////////////////////////// end
 
-@media (max-width: 575px) {
-    body{
-        background-color: plum;
-        font-family: 'Rubik';
+@media (min-width: 992px) and (max-width: 1199px) {  
+    .header{
+        width: 1198px;
+        height: 680px;
     }
     .header-box{
-        margin-left: 50px;
+        width: 1011px;
+        margin-left: 110px;
+    }
+    .header-box-container{
+        margin-left: 120px;
+    }
+    .header-box-burger{
+        margin-right: 30px;
+    }
+    .header-box-nav{
+        width: 570px;
+        column-gap: 20.5px;
+    }
+    .header-basic{
+        margin-left: 110px;
+        margin-top: 60px;
+    }
+    .header-case{
+        width: 0px;
+    }
+    .header-basic-name{
+        text-shadow: 10px 10px 10px black;
+        -webkit-text-stroke: 2px black;
+    }
+    .header-box-nav-link{
+        color: var(--header-name);
+        text-shadow: 2px 2px 3px black;
+    }
+    .header-basic-text{
+        text-shadow: 2px 2px 3px black;
+    }
+    .header-case-photo1{
+        height: 680px;
+    }
+    .header-case-photo2{
+        height: 680px;
+    }
+    .header-case-box{
+        height: 680px;
+    }
+    .video-box{
+        height: 582px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1150px){
+    .header-box-nav{
+        width: 414px;
+    }
+    .headerVisible{
+        visibility: visible;
+        padding-top: 2px;
+        transition: 0.3s;
+    }
+    .edition-container-box1, .edition-container-box2, .edition-container-box3{
+        width: 270px;
+    }
+    .edition-container-box1-photo, .edition-container-box2-photo, .edition-container-box3-photo{
+        width: 270px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {  
+    .header{
+        width: 1198px;
+        height: 680px;
+    }
+    .header-box{
+        width: 855px;
+        margin-left: 110px;
+    }
+    .header-box-container{
+        margin-left: 120px;
+    }
+    .header-box-burger{
+        margin-right: 30px;
+    }
+    .header-box-nav{
+        width: 227px;
+        column-gap: 20.5px;
+    }
+    .header-basic{
+        margin-left: 110px;
+        margin-top: 40px;
+    }
+    .header-case{
+        width: 0px;
+    }
+    .header-basic-name{
+        font-size: 80px;
+        text-shadow: 10px 10px 10px black;
+        -webkit-text-stroke: 2px black;
+    }
+    .header-box-nav-link{
+        color: var(--header-name);
+        text-shadow: 2px 2px 3px black;
+    }
+    .header-basic-text{
+        font-size: 16px;
+        text-shadow: 2px 2px 3px black;
+    }
+    .header-case-photo1{
+        height: 630px;
+    }
+    .header-case-photo2{
+        height: 630px;
+    }
+    .header-case-box{
+        height: 630px;
+    }
+    .video-box{
+        height: 415px;
+    }
+    .headerVisible{
+        visibility: visible;
+        padding-top: 0px;
+        transition: 0.3s;
+    }
+    .edition-container-box1, .edition-container-box2, .edition-container-box3{
+        width: 270px;
+        margin-top: 7px;
+    }
+    .edition-container-box1-photo, .edition-container-box2-photo, .edition-container-box3-photo{
+        width: 270px;
+    }
+    .edition-container{
+        flex-wrap: wrap;
+    }
+    .dualSense-container-box1{
+        margin-right: 10px;
+    }
+    .faq{
+        width: 770px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {  
+    .header{
+        width: 767px;
+        height: 530px;
+    }
+    .header-box{
+        width: 630px;
+        margin-left: 40px;
+    }
+    .header-box-container{
+        position: absolute;
+        margin-left: 120px;
+        left: 155px;
+        top: 8px;
+    }
+    .header-box-container-name{
+        text-shadow: 2px 2px 3px black;
+    }
+    .header-box-container-box1-name, .header-box-container-box2-name, .header-box-container-box3-name{
+        text-shadow: 2px 2px 3px black;
+    }
+    .header-box-container-box1-text, .header-box-container-box2-text, .header-box-container-box3-text{
+        text-shadow: 2px 2px 3px black;
+    }
+    .header-box-burger{
+        margin-right: 30px;
+        margin-bottom: 60px;
+    }
+    .header-box-nav{
+        width: 355px;
+        height: 52px;
+        column-gap: 20.5px;
+    }
+    .header-box-nav-link{
+        height: 25px;
+    }
+    .header-basic{
+        margin-left: 40px;
+        margin-top: 0px;
+    }
+    .header-case{
+        width: 0px;
+    }
+    .header-basic-name{
+        font-size: 60px;
+        text-shadow: 10px 10px 10px black;
+        -webkit-text-stroke: 2px black;
+    }
+    .header-box-nav-link{
+        color: var(--header-name);
+        text-shadow: 2px 2px 3px black;
+    }
+    .header-basic-text{
+        font-size: 14px;
+        text-shadow: 2px 2px 3px black;
+    }
+    .header-case-photo1{
+        width: 850px;
+        height: 520px;
+    }
+    .header-case-photo2{
+        height: 520px;
+    }
+    .header-case-box{
+        height: 520px;
+    }
+    .video-box{
+        height: 298px;
+    }
+    .video-box-name{
+        font-size: 27px;
+    }
+    .video-box-btn{
+        width: 60px;
+        height: 25px;
+        font-size: 13px;
+    }
+    .headerHidden{
+        visibility: hidden;
+        padding-top: 0px;
+        transition: 0s;
+        position: absolute;
+        margin-left: 0px;
+    }
+    .headerVisible{
+        visibility: visible;
+        padding-top: 0px;
+        transition: 0.3s;
+        position: relative;
+        margin-left: 10px;
+    }
+    .edition-container-box1, .edition-container-box2, .edition-container-box3{
+        width: 316px;
+        margin-top: 7px;
+    }
+    .edition-container-box1-photo, .edition-container-box2-photo, .edition-container-box3-photo{
+        width: 316px;
+    }
+    .edition-container{
+        flex-wrap: wrap;
+    }
+    .dualSense-container-box1{
+        width: 437px;
+        margin-right: 10px;
+    }
+    .dualSense-container-box2{
+        height: 280px;
+    }
+    .dualSense{
+        width: 413px;
+    }
+    .dualSense-container{
+        flex-wrap: wrap-reverse;
+    }
+    .faq{
+        width: 550px;
     }
 }
