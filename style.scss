@@ -1185,3 +1185,13 @@ font-size: 17px;
 //////////////////////////////// footer
 
 //////////////////////////////// end
+
+@media (max-width: 575px) {
+    body{
+        background-color: plum;
+        font-family: 'Rubik';
+    }
+    .header-box{
+        margin-left: 50px;
+    }
+}
