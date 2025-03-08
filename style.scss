@@ -1188,7 +1188,48 @@ font-size: 17px;
 ///////////////////////////////// end
 
 //////////////////////////////// footer
+.footer{
 
+    &-container{
+
+        &-box1{
+
+            &-link{
+
+            }
+            &-link:hover{
+
+            }
+        }
+        &-box2{
+
+            &-text{
+
+            }
+        }
+    }
+    &-text{
+
+    }
+    &-case{
+
+        &-photo{
+
+        }
+        &-name{
+
+        }
+        &-text{
+
+        }
+    }
+}
+.spanFooter1{
+
+}
+.spanFooter2{
+
+}
 //////////////////////////////// end
 
 @media (min-width: 992px) and (max-width: 1199px) {  
