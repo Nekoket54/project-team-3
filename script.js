@@ -89,7 +89,7 @@ toggle.addEventListener("change", function () {
         leftText.textContent = "Minimum";
         rightText.textContent = "Recommended";
         os.innerHTML =  "<p class='toggle-position-props-paragraph toggle-position-props-paragraph-os'><span class='toggle-position-props-paragraph-span'>OS</span>: Windows 11 64-bit</p>"
-        cpu.innerHTML = "<p> <span class='toggle-position-props-paragraph-span'>CPU</span>: AMD Ryzen 3 1200 (4 core 3.1 GHz) (4 core 3.3 GHz)</p>";
+        cpu.innerHTML = "<p> <span class='toggle-position-props-paragraph-span'>CPU</span>: AMD Ryzen 3 1200 (4 core 3.1 GHz)</p>";
         videocard.innerHTML = "<p class='toggle-position-props-paragraph toggle-position-props-paragraph-videocard'><span class='toggle-position-props-paragraph-span'>VIDEOCARD</span>: AMD R9 290X (4 GB)</p>"
         dedicated.innerHTML = "<p class='toggle-position-props-paragraph toggle-position-props-paragraph-dedicated'><span class='toggle-position-props-paragraph-span'>DEDICATED VIDEO RAM</span>: 8 GB</p>"
         leftText.style.transition= "0.3s";
