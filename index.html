@@ -30,7 +30,7 @@
             <a class="header-box-nav-link" href="#edition">EDITIONS</a>
             <a class="header-box-nav-link" href="#dualSense">CONTROLLER</a>
             <a class="header-box-nav-link" href="#video">ABOUT GAME</a>
-            <a class="header-box-nav-link" href="#">EXPLORE</a>
+            <a class="header-box-nav-link" href="#properties">EXPLORE</a>
             <a class="header-box-nav-link" href="#news">NEWS</a>
             <a class="header-box-nav-link" href="#faq">FAQ</a>
             <p class="header-box-nav-text">ENGLISH <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +58,7 @@
         <div class="header-basic">
             <h1 class="header-basic-name">God of War <br> Ragnarök</h1>
             <p class="header-basic-text">Taking place three years following the events of the previous <br> game, Fimbulwinter, a great winter that spans three summers, <br> is drawing to a close which will begin the prophesied Ragnarök.</p>
-            <button class="header-basic-btn">BUY NOW</button>
+            <button class="header-basic-btn" onclick="location.href='#edition'">BUY NOW</button>
         </div>
     </header>
 
@@ -172,55 +172,86 @@
             </div>
         </section>
 
-        <section>
-            <div>
-                <div>
-                    <h2>Explore the God of War series</h2>
-                    <p>Here are the God of War (PC) System Requirements</p>
-                    <button>0</button>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-
+        <section id="properties">
+          <div class="properties">
+            <h2 class="properties-title">Explore the God of War series</h2>
+            <p class="properties-name">Here are the God of War (PC) System Requirements</p>
+            <div class="toggle-container">
+              <p class="toggle-container-left" id="left" >Minimum</p>
+              <input type="checkbox" id="toggle" class="toggle">
+              <label for="toggle" class="toggle-label"></label>
+              <p class="toggle-container-right" id="right">Recommended</p>
+            </div>  
+    
+            <div class="toggle-position">    
+              <div class="kid-container">
+                <svg width="377" height="215" viewBox="0 0 377 215" fill="none" xmlns="http://www.w3.org/2000/svg" class="kid-container-bg-blur">
+                  <g filter="url(#filter0_f_12_90)">
+                    <ellipse cx="30.5" cy="70" rx="30.5" ry="70" transform="matrix(-0.0273243 -0.999627 0.999634 -0.0270551 86.991 213.342)" fill="#FF4136" fill-opacity="0.8" />
+                  </g>
+                  <defs>
+                    <filter id="filter0_f_12_90" x="-63.8475" y="0.410645" width="439.959" height="361.097" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                      <feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_12_90" />
+                    </filter>
+                  </defs>
+                </svg>
+                <div class="kid-container-bg"> 
+                  <img src="./img/png-kid.png" alt="" class="kid-container-png">  
+                </div> 
+              </div>
+                    <div class="toggle-position-props">
+                        <p class="toggle-position-props-paragraph toggle-position-props-paragraph-cpu"> <span class="toggle-position-props-paragraph-span">CPU</span>: Intel i5-2500k (4 core 3.3 GHz)</p>
+                        <p class="toggle-position-props-paragraph toggle-position-props-paragraph-ram"><span class="toggle-position-props-paragraph-span">RAM</span>: 8 GB</p>
+                        <p class="toggle-position-props-paragraph toggle-position-props-paragraph-os"><span class="toggle-position-props-paragraph-span">OS</span>: Windows 10 64-bit</p>
+                        <p class="toggle-position-props-paragraph toggle-position-props-paragraph-videocard"><span class="toggle-position-props-paragraph-span">VIDEOCARD</span>: NVIDIA GTX 960 (4 GB)</p>
+                        <p class="toggle-position-props-paragraph toggle-position-props-paragraph-pixel"><span class="toggle-position-props-paragraph-span">PIXEL SHADER</span>: 5.1</p>
+                        <p class="toggle-position-props-paragraph toggle-position-props-paragraph-vertext"><span class="toggle-position-props-paragraph-span">VERTEX SHADER</span>: 5.1</p>
+                        <p class="toggle-position-props-paragraph toggle-position-props-paragraph-freespace"><span class="toggle-position-props-paragraph-span">FREE DISK SPACE</span>: 70 GB</p>
+                        <p class="toggle-position-props-paragraph toggle-position-props-paragraph-dedicated"><span class="toggle-position-props-paragraph-span">DEDICATED VIDEO RAM</span>: 4 GB</p>
+                        <button class="toggle-position-props-btn">BUY NOW</button>
                     </div>
-                </div>
-                <div>
-                    <p>CPU: Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)</p>
-                    <p>RAM: 8 GB</p>
-                    <p>OS: Windows 10 64-bit</p>
-                    <p>VIDEOCARD: NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)</p>
-                    <p>PIXEL SHADER: 5.1</p>
-                    <p>VERTEX SHADER: 5.1</p>
-                    <p>FREE DISK SPACE: 70 GB</p>
-                    <p>DEDICATED VIDEO RAM: 4 GB</p>
-                    <button>BUY NOW</button>
-                </div>
+
+                    <p style="            
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 240%;
+                    color: #8856d9;"></p>
             </div>
+          </div>
+    <!-- ---------- -->
+    <div class="properties-kratos">
+      <p class="properties-kratos-name">God of War for PS4 </p>
+      <div class="toggle-kratos">
+        <div class="kratos-container">
+          <div class="kratos-toggle-container">
+            <p class="kratos-label-left">Standard</p>
+            <input type="checkbox" id="kratos-toggle" class="kratos-toggle-input">
+            <label for="kratos-toggle" class="kratos-switch">
+                <div class="kratos-knob"></div>
+            </label>
+            <p class="kratos-label-right">Limited</p>
+          </div>
+        </div>
+      </div>
 
-
-            <div>
-                <div>
-                    <p>God of War for PS4</p>
-                    <button>0</button>
-                    <p>15.99$</p>
-                </div>
-                <div>
-                    <p>Platform:PS4</p>
-                    <p>Premiere:20.4.2018</p>
-                    <p>Publisher:Sony Interactive Entertainment Europe</p>
-                    <p>Species:Action, Adventure</p>
-                    <p>Voice:English, Polish, Ukrainian</p>
-                    <p>Display languages:English, Dutch, Polish, Ukrainian, Turkish</p>
-                    <button>BUY NOW</button>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-
-                    </div>
-                </div>
-            </div>
+      <div class="toggle-kratos-position">
+        <div class="toggle-kratos-position-props">
+          <p class="toggle-kratos-position-props-paragraph toggle-kratos-position-props-paragraph-platform"><span class="toggle-kratos-position-props-paragraph-span">Platform</span>: PS4</p>
+          <p class="toggle-kratos-position-props-paragraph toggle-kratos-position-props-paragraph-premiere"><span class="toggle-kratos-position-props-paragraph-span">Premiere</span>: 20.4.2018</p>
+          <p class="toggle-kratos-position-props-paragraph"><span class="toggle-kratos-position-props-paragraph-span">Publisher</span>: Sony Interactive Entertainment Europe</p>
+          <p class="toggle-kratos-position-props-paragraph"><span class="toggle-kratos-position-props-paragraph-span">Species</span>: Action, Adventure</p>
+          <p class="toggle-kratos-position-props-paragraph toggle-kratos-position-props-paragraph-voice"><span class="toggle-kratos-position-props-paragraph-span">Voice</span>: English</p>
+          <p class="toggle-kratos-position-props-paragraph"><span class="toggle-kratos-position-props-paragraph-span">Display languages</span>: English, Dutch, Polish, (not)Russian, Turkish</p>
+          <button class="toggle-kratos-position-props-btn">BUY NOW</button>
+        </div>
+        <div class="kratos-container-bg"> 
+          <img src="./img/png-kratos.png" alt="" class="kratos-container-png">  
+        </div>
+      </div>
+    </div>
         </section>
 
         <section id="news">
@@ -371,7 +402,7 @@
           <a href="#edition" class="footer-container-box1-link">EDITIONS</a>
           <a href="#dualSense" class="footer-container-box1-link">CONTROLLER</a>
           <a href="#video" class="footer-container-box1-link">ABOUT GAME</a>
-          <a href="#" class="footer-container-box1-link">EXPLORE</a>
+          <a href="#properties" class="footer-container-box1-link">EXPLORE</a>
           <a href="#news" class="footer-container-box1-link">NEWS</a>
           <a href="#faq" class="footer-container-box1-link">FAQ</a>
         </div>
