@@ -85,7 +85,7 @@ body {
   background-color: var(--header-name);
 }
 .header-box-nav {
-  width: 643px;
+  width: 650px;
   display: flex;
   -moz-column-gap: 32.5px;
        column-gap: 32.5px;
