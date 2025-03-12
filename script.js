@@ -53,6 +53,91 @@ close.addEventListener('click',()=>{
 })
 //////////////////////////////
 
+////////////////////////////// validation
+let creditCard = document.querySelector('.container-card')
+let expire = document.querySelector('.container-box1-case1-expire')
+let ccv = document.querySelector('.container-box1-case2-ccv')
+let instant = document.querySelector('.container-instant')
+let checkbox = document.querySelector('.container-box2-checkbox')
+let btnForm = document.querySelector('.container-btn')
+
+creditCard.addEventListener("input", function () {
+  if (creditCard.value.length < 19) {
+    creditCard.style.border = '2px,solid,#e56464'
+    creditCard.classList.replace('verity', 'wrong')
+  }else if(creditCard.value.length > 19){
+    creditCard.style.border = '2px,solid,#e56464'
+    creditCard.classList.replace('verity', 'wrong')
+  }else if(creditCard.value.length = 19){
+    creditCard.style.border = '2px,solid,rgb(78 181 96)'
+    creditCard.classList.replace('wrong', 'verity')
+  }
+});
+
+expire.addEventListener("input", function () {
+  if (expire.value.length < 5) {
+    expire.style.border = '2px,solid,#e56464'
+    expire.classList.replace('verity', 'wrong')
+  }else if(expire.value.length > 5){
+    expire.style.border = '2px,solid,#e56464'
+    expire.classList.replace('verity', 'wrong')
+  }else if(expire.value.length = 5){
+    expire.style.border = '2px,solid,rgb(78 181 96)'
+    expire.classList.replace('wrong', 'verity')
+  }
+});
+
+ccv.addEventListener("input", function () {
+  if (ccv.value.length < 3) {
+    ccv.style.border = '2px,solid,#e56464'
+    ccv.classList.replace('verity', 'wrong')
+  }else if(ccv.value.length > 3){
+    ccv.style.border = '2px,solid,#e56464'
+    ccv.classList.replace('verity', 'wrong')
+  }else if(ccv.value.length = 3){
+    ccv.style.border = '2px,solid,rgb(78 181 96)'
+    ccv.classList.replace('wrong', 'verity')
+  }
+});
+
+instant.addEventListener("input", function () {
+  if (instant.value.length < 1) {
+    instant.style.border = '2px,solid,#e56464'
+    instant.classList.replace('verity', 'wrong')
+  }else if(instant.value.length > 1){
+    instant.style.border = '2px,solid,rgb(78 181 96)'
+    instant.classList.replace('wrong', 'verity')
+  }
+});
+
+checkbox.addEventListener('click',()=>{
+  const check3 = checkbox.classList.contains('wrong')
+  console.log(check3);
+  if (check3 == true){
+    checkbox.classList.replace('wrong','verity')
+    checkbox.style.border = '2px,solid,rgb(78 181 96)'
+  }else{
+    checkbox.classList.replace('verity','wrong')
+    checkbox.style.border = '2px,solid,#e56464'
+  }
+})
+
+btnForm.addEventListener('click',()=>{
+  const creditCardCheck = creditCard.classList.contains('wrong')
+  const expireCheck = expire.classList.contains('wrong')
+  const ccvCheck = ccv.classList.contains('wrong')
+  const instantCheck = instant.classList.contains('wrong')
+  const checkboxCheck = checkbox.classList.contains('wrong')
+  if (creditCardCheck == true && expireCheck == true && ccvCheck == true && instantCheck == true && checkboxCheck == true) {
+    alert('Unfortunately you missed one of the points')
+  }else if(creditCardCheck == false && expireCheck == false && ccvCheck == false && instantCheck == false && checkboxCheck == false){
+    alert(`Thank you for your purchase ${instant.value}!`)
+  }else{
+    alert('Unfortunately you missed one of the points')
+  }
+})
+//////////////////////////////
+
 ////////////////////////////// video
 const box = document.querySelector('.video-box')
 const btn = document.querySelector('.video-box-btn')

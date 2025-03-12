@@ -108,21 +108,21 @@
             <h2 class="container-name1">GOD OF WAR RAGNAROK</h2>
             <h3 class="container-name2">STANDARD EDTION</h3>
             <label for="container-card" class="container-infoCard">CREDIT CARD:</label>
-            <input type="text" class="container-card" placeholder="0000 0000 0000 0000">
+            <input type="text" class="container-card wrong" maxlength="19" placeholder="0000 0000 0000 0000" required oninput="this.value = this.value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ').trim();">
             <div class="container-box1">
               <div class="container-box1-case1">
                 <label for="container-box1-case1-expire" class="container-box1-case1-infoExpire">EXPIRE:</label>
-                <input type="text" class="container-box1-case1-expire" placeholder="MM/YY">
+                <input type="text" class="container-box1-case1-expire wrong" maxlength="5" placeholder="MM/YY" required oninput="this.value = this.value.replace(/\D/g, '').replace(/(.{2})/g,'$1/').replace(/\/$/, '');">
               </div>
               <div class="container-box1-case2">
                 <label for="container-box1-case2-ccv" class="container-box1-case2-infoCcv">CCV:</label>
-                <input type="text" class="container-box1-case2-ccv" placeholder="***">
+                <input type="text" class="container-box1-case2-ccv wrong" maxlength="3" placeholder="***" required oninput="this.value = this.value.replace(/\D/g, '')">
               </div>
             </div>
             <label for="container-instant" class="container-infoInstant">INSTANT:</label>
-            <input type="text" class="container-instant" placeholder="JOHN DOE">
+            <input type="text" class="container-instant wrong" placeholder="JOHN DOE" required oninput="this.value = this.value.replace(/[^a-zA-Zа-яА-ЯёЁ]/g, '')">
             <div class="container-box2">
-              <input type="checkbox" class="container-box2-checkbox">
+              <input type="checkbox" class="container-box2-checkbox wrong" required>
               <p class="container-box2-text">I AGREE WITH THE <span class="spanFormOfPayment">RULES</span> OF THE SITE</p>
             </div>
             <p class="container-text">Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms plus any specific additional conditions applying to this product. If you do not wish to accept these terms, do not download this product. See Terms of Service for more important information.</p>
